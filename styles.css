@@ -75,8 +75,29 @@ body {
   line-height: 140%;
   padding: 5px 16px;
   color: #373737;
+  animation: fadeIn ease-in 1.5s, moveUp ease-in 1.5s;
+  position: relative;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+/* to disable landscape mode */
 @media screen and (orientation: landscape) {
   .holder {
     transform: rotate(-90deg);
