@@ -116,3 +116,20 @@ body {
     height: 6vw;
   }
 }
+
+/* styles for larger screens */
+@media screen and (min-width: 500px) {
+  .button {
+    font-size: 20px;
+  }
+  .robot img {
+    min-width: 80px;
+  }
+  .guide p {
+    font-size: 18px;
+  }
+  .guide-bubble {
+    font-size: 18px;
+    padding: 8px 24px;
+  }
+}
